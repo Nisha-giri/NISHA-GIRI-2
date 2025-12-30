@@ -34,7 +34,7 @@
     <style>
         /* ===== NEW COLOR THEME ===== */
         :root {
-            --lightest: #E7FOFA;   /* page background */
+            --lightest: #E7F0FA;   /* page background */
             --light:    #7BA4D0;   /* cards, borders */
             --primary:  #2E5E99;   /* buttons, accents */
             --darkest:  #0D2440;   /* text on light */
@@ -71,6 +71,13 @@
             background-size:200% 100%;animation:shimmer 3s infinite linear;transform:rotate(30deg);opacity:0;transition:opacity .3s;
         }
         .shine-effect:hover::before{opacity:1;}
+
+        /* Pure-white stats card */
+        .stats-white{
+            background:var(--white)!important;
+            color:var(--darkest)!important;
+            border:1px solid var(--light);
+        }
 
         .glow-border{
             border:2px solid transparent;
@@ -214,7 +221,7 @@
                 </div>
                 <button class="wa-btn mb-4 open-any shine-effect">📲 Connect on WhatsApp</button>
                 <div class="row g-3">
-                    <div class="col-md-4"><div class="stat-card shine-effect"><div class="counter" data-target="5" data-suffix="+">0</div><p>Years Experience</p></div></div>
+                    <div class="col-md-4"><div class="stat-card shine-effect"><div class="counter" data-target="5" data-suffix="+">0</div><p>Years of Experience</p></div></div>
                     <div class="col-md-4"><div class="stat-card shine-effect"><div class="counter" data-target="2000" data-suffix="+">0</div><p>Students Helped</p></div></div>
                     <div class="col-md-4"><div class="stat-card shine-effect"><div class="counter" data-target="100000" data-prefix="₹">0</div><p>Monthly Earning</p></div></div>
                 </div>
@@ -313,20 +320,20 @@
     </div>
 </section>
 
-<!-- ===== STATS ===== -->
+<!-- ===== STATS (NOW PURE WHITE) ===== -->
 <section class="py-5" style="background: linear-gradient(135deg,var(--lightest),var(--white));">
     <div class="container">
         <h2 class="text-center display-5 fw-bold mb-4" style="color:var(--primary);">Know Your Coach</h2>
         <div class="row g-3 align-items-center">
             <div class="col-md-6">
-                <div class="d-flex align-items-center gap-3 p-3 rounded-2 mb-3 shadow-sm glow-border" style="background: var(--white);">
+                <div class="stats-white d-flex align-items-center gap-3 p-3 rounded-2 mb-3 shadow-sm">
                     <div class="text-white d-flex align-items-center justify-content-center rounded-circle" style="width:70px;height:70px;background:linear-gradient(135deg,var(--primary),var(--light));">⭐</div>
                     <div>
                         <h3 class="fw-bold mb-1 fs-2"><span class="counter" data-target="5" data-suffix="+">0</span></h3>
                         <p>Years of Experience</p>
                     </div>
                 </div>
-                <div class="d-flex align-items-center gap-3 p-3 rounded-2 shadow-sm glow-border" style="background: var(--white);">
+                <div class="stats-white d-flex align-items-center gap-3 p-3 rounded-2 shadow-sm">
                     <div class="text-white d-flex align-items-center justify-content-center rounded-circle" style="width:70px;height:70px;background:linear-gradient(135deg,var(--light),var(--darkest));">👥</div>
                     <div>
                         <h3 class="fw-bold mb-1 fs-2"><span class="counter" data-target="1000" data-suffix="+">0</span></h3>
@@ -335,16 +342,16 @@
                 </div>
             </div>
             <div class="col-md-6 text-center">
-                <div class="p-4 rounded-3 shadow-lg text-white glow-pulse" style="background: linear-gradient(135deg,var(--primary),var(--light));">
-                    <h3 class="fw-bold fs-3 mb-2">🔥 Now it's YOUR time</h3>
+                <div class="stats-white p-4 rounded-3 shadow-lg glow-pulse">
+                    <h3 class="fw-bold fs-3 mb-2" style="color:var(--primary);">🔥 Now it's YOUR time</h3>
                     <div class="row text-center">
                         <div class="col-6">
-                            <h4 class="fw-bold fs-2 mb-0">₹<span class="counter" data-target="1600000">0</span></h4>
-                            <p class="opacity-75">Earned by Students</p>
+                            <h4 class="fw-bold fs-2 mb-0" style="color:var(--primary);">₹<span class="counter" data-target="1600000">0</span></h4>
+                            <p class="text-muted">Earned by Students</p>
                         </div>
                         <div class="col-6">
-                            <h4 class="fw-bold fs-2 mb-0"><span class="counter" data-target="300" data-suffix="+">0</span></h4>
-                            <p class="opacity-75">Earning ₹50K–₹1L</p>
+                            <h4 class="fw-bold fs-2 mb-0" style="color:var(--primary);"><span class="counter" data-target="300" data-suffix="+">0</span></h4>
+                            <p class="text-muted">Earning ₹50K–₹1L</p>
                         </div>
                     </div>
                 </div>
